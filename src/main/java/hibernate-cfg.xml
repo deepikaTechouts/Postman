@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<hibernate-configuration>
+ <session-factory>
+         <property name="hibernate.hbm2ddl.auto">update</property>    
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>    
+        <property name="connection.url">jdbc:mysql://localhost:3306/userdb</property>    
+        <property name="connection.username">root</property>    
+        <property name="connection.password">root</property>    
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>   
+        <property name="show_sql">true</property>
+        <property  name="hibernate.format_sql">true</property>
+
+
+<mapping class="com.pojo.pages.RegistrationPojo"/>
+<mapping class="com.pojo.pages.Registration1"/>
+<mapping class="com.pojo.pages.Registration2"/>
+<mapping class="com.pojo.pages.Registration3"/>
+
+</session-factory>
+</hibernate-configuration>
